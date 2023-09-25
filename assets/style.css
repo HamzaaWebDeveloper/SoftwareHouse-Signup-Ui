@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+body{
+  background-color: #eeeeee;
+}
+
+
+.img-container {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .img-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, rgba(12, 1, 104, 1), rgba(193, 11, 218, 0.5));
+    
+  }
+
+
+
+.img1{
+ 
+    max-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 650px;
+    
+   
+}
+
+.img1-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    
+ 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .img1-subtext{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    
+    color: white;
+    
+ 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+
+  .btn-img{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+   
+  }
+
+
+  .btn-css{
+    width: 150px;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+  font-family: 'Belanosima', sans-serif;
+  
+  }
+
+  .btn-css:hover{
+    background: linear-gradient(to bottom left, rgba(12, 1, 104, 1), rgba(193, 11, 218, 0.5));
+    color: white;
+    transition: 1s;
+  }
+
+
+  /* col 2 */
+
+
+.card{
+  border: 0;
+  background-color: #eeeeee;
+}
+
+
+  
+  .form-top-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  .form-top-text2{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+
+
+.submit-css{
+  height: 50px;
+  border-radius: 0;
+  background: linear-gradient(to bottom left, rgba(12, 1, 104, 1), rgba(193, 11, 218, 0.5));
+  font-size: 16px;
+  padding: 12px 0px ;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border: 0px;
+}
+
+
+.submit-css:hover{
+  background: linear-gradient(to bottom left, rgba(193, 11, 218, 0.5), rgba(12, 1, 104, 1));
+  transition: 1;
+  color: white;
+}
+
+
+.fb-css{
+background-color:
+#37517e;
+color: white;
+
+width: 150px;
+height: 50px;
+border-radius: 0%;
+}
+
+.google-css{
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 0%;
+}
+
+.twitter-css{
+  width: 150px;
+height: 50px;
+border-radius: 0%;
+  background-color: #53adee;
+  color: white;
+}
+
+
+.fb-css:hover{
+  color: white;
+}
+
+
+.twitter-css:hover{
+  color: white;
+}
+
+
+
+.form-control {
+  border-radius: 0%;
+      outline: none;
+      border: 1px solid rgba(12, 1, 104, 1);
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 1px 1px rgba(193, 11, 218, 0.5);
+    }
+
+
+    .form-select{
+      border-radius: 0%;
+      outline: none;
+      border: 1px solid #ccc;
+    }
+
+    .form-select:focus{
+      outline: none;
+      border: 1px solid rgba(12, 1, 104, 1);
+      box-shadow: 0 0 1px 1px rgba(193, 11, 218, 0.5);
+    }
+
+
+
+    /* responsive */
+
+
+    
+    @media (max-width: 768px) {
+      .img1{
+        width:950px ;
+      }
+    }
+    
+
+    @media (max-width: 912px) {
+      .img1{
+        width:950px ;
+      }
+    }
+
+    @media (max-width: 639px) {
+      .img1-text{
+        top: 50%;
+      }
+    }
+
+
+    @media (max-width: 639px) {
+      .img1-subtext{
+        top: 56%;
+      }
+    }
+
+    @media (max-width: 639px) {
+      .btn-img{
+        top: 60%;
+      }
+    }
+    
+    @media (max-width: 512px) {
+      .img1-subtext{
+        top: 60%;
+      }
+    }
+
+    @media (max-width: 512px) {
+      .btn-img{
+        top: 70%;
+      }
+    }
+
+    @media (max-width: 370px) {
+      .img1-text{
+        top: 35%;
+      }
+    }
+    
+    @media (max-width: 370px) {
+      .img1-subtext{
+        top: 50%;
+      }
+    }
+
+    @media (max-width: 370px) {
+      .btn-img{
+        top: 60%;
+      }
+    }
+
+    @media (max-width: 370px) {
+      .submit-css{
+        font-size: 12px;
+      }
+    }
+
+
+    
+    @media (max-width: 576px) {
+      .d-flex {
+        flex-direction: column;
+        align-items: center;
+        
+        
+      }
+    
+      .justify-content-center {
+        justify-content: center;
+      }
+    
+      .mb-3 {
+        margin-bottom: 0.75rem;
+      }
+    
+      .mr-3 {
+        margin-right: 0.75rem;
+      }
+    }
+    
